@@ -1,0 +1,784 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: #FAF6F2 ;
+    color: #683B2B;
+    justify-content: center;
+    align-content: center;
+    margin:0
+}
+
+p{
+    font-weight: normal;
+    font-family: 'Monda';
+    font-size: 15px;
+    color: #683B2B;
+}
+
+
+h1{
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: normal;
+    font-size: 5vh;
+    color: #683B2B;
+    margin: 5vh;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: normal;
+    font-size: 5vh;
+    color: #683B2B;
+    margin: 5vh;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Monda';
+    font-weight: normal;
+    font-size: 5vh;
+    color: #683B2B;
+    text-align: left;
+}
+
+h5{
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: normal;
+    font-size: 5vh;
+    color: #683B2B;
+    margin: 1vh;
+    text-align: center;
+}
+  
+
+/*Nav bar*/
+.navbar {
+    overflow: hidden;
+    padding: 5px;
+    height: auto;
+    width: auto;
+}
+  
+.navbar a {
+    display: inline-flex;
+    flex-direction: row;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    font-size: 20px;
+    line-height: 6vh;
+    color: #683B2B;
+  }
+
+/*Logo*/
+.Logo{
+    height: 45px;
+    width: auto;
+    padding:6px;
+    margin-right:1vw;
+}  
+
+/*About Button*/
+.dropdown {
+    float: left;
+    font-size: 20px;
+    line-height: 6vh;
+    color: #683B2B;
+  }
+  
+.dropdown #dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    padding: 2vh;
+    background-color: inherit;
+    font-family: inherit;
+    margin-top:10px;
+    color: #683B2B;
+    cursor: pointer;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top:10vh;
+    background-color: #fffdfb;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding:3px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 16px;
+    line-height: 6vh;
+    text-decoration: none;
+    color: #683B2B;
+  }
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #b08401;
+    transition-duration: 0.3s;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.navActive{
+    margin-top: 7px;
+}
+
+.navActive:hover{
+    color: #b08401;
+    transition-duration: 0.3s;
+    transform: translateY(-10px);
+    height: auto;
+}
+
+
+/*Subscribe form button*/
+.topnav-right{
+    position: absolute;
+    right: 0;
+    padding:10px;
+}
+
+.container {
+  padding: 16px;
+  position: relative;
+}
+
+.row{
+    width: auto;
+    height: auto;
+    margin: none;
+    padding: none;
+    column-gap: 20%;
+}
+
+.column{
+    width: 45%;
+    float: left;
+    margin-right: auto;
+}
+
+/*Image*/
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.subscribeBackground{
+
+    height: 70vh;
+}
+
+/* Full-width input fields */
+input[type=email] {
+    width: 70%;
+    padding: 12px 20px;
+    margin : 0 auto;
+    display: block;
+    border: 1px solid #FAF6F2;
+    box-sizing: border-box;
+    background-color: #e7c9bf;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+/* Set a style for all buttons */
+.subscribeBtn {
+  background-color: #B08401;
+  color: #FAF6F2;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Julius Sans One', sans-serif;  
+}
+
+.subscribeBtn:hover {
+  opacity: 0.8;
+}
+
+#submit{
+    width:40%;
+    margin-top: 20px;
+    font-size: 2.5vh;
+}
+
+#subRight{
+    text-align: center;
+}
+
+.subscribeHeader{
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+}
+.subscribeHeader::after {
+    content: '';
+    position: absolute;
+    left: 10%;
+    display: inline-block;
+    height: 1em;
+    width: 80%;
+    border-bottom: 1px solid;
+    border-color: #683B2B;
+    margin-top: 10px;
+}
+
+.subscribePara {
+    font-size: 4vh;
+    margin-top: 50px;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /*  Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #FAF6F280; /* color w/ opacity */
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #e7c9bf;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 75%;
+    border-style: solid;
+  border-width: 0.5px; 
+  border-color: #683B2B;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #683B2B;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #B08401;
+  cursor: pointer;
+}
+
+/*marquee*/
+marquee{
+    height: 30px;
+    background-color: #D49E8B;
+    padding:2vh;
+    letter-spacing: 0.05vw;
+}
+
+marquee h4{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 19px;
+    color: #FAF6F2;
+    vertical-align: baseline;
+    padding-top: 0.5vh;
+    font-weight: normal;
+}
+
+
+.mainBody{
+    margin: 3vh;
+    height: 300vh;
+    width: auto;
+    align-items: center;
+}
+
+.mainArticleBox{
+    position: relative;
+    padding: 2vh;
+}
+
+/*first section- main article*/
+.mainArticle {
+    width: auto;
+    height: auto;
+    padding: 5px;
+}
+
+.mainArticleItems{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 20px;
+    height: auto;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.slideshowImages{
+    height: 50vh;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #FAF6F2;
+  font-weight: normal;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #DED1BD;
+}
+
+/* Caption text */
+.slideshowText {
+    color: #683B2B;
+    font-family: 'Monda';
+    font-size: 10px;
+    padding: 0px 0px;
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    text-align: right;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #DED1BD;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #B08401;
+}
+
+.accColumn{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 20px;
+    height: auto;
+    margin: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px;
+    padding-bottom: 30px;
+}
+
+.box{
+    height: 50vh;
+    position: relative;
+     display: flex;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.box h3 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.accImgBox{
+    max-width: 100%;
+    transition: transform 2s;
+    text-align: center
+}
+   
+
+/*Recent Articles*/
+.recentArticles{
+    background-color: #DED1BD;
+    padding: 5vh;    
+}    
+
+.recentArticlesAcc
+{
+    background-color: #DED1BD;
+    color: #683B2B;
+    font-family: 'Julius Sans One', sans-serif;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 5vh;
+    font-weight: normal;
+    transition: 0.4s;
+}
+
+.active2, .recentArticlesAcc:hover {
+    padding:2vh;
+    border-bottom:1px solid #683B2B;
+    border-top:1px solid #683B2B;
+}
+
+.recentArticlesPanel{
+    padding: 0 0px;
+    max-height: 0;
+    height: auto;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: inherit;
+}
+
+#recentArticlesBox{
+    border: 1px solid #683B2B;
+    height: 35vh;
+}
+ 
+
+/*Artist of the week*/
+.artistItems{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 20px;
+    height: auto;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.artistOfTheWeek h2{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #683b2b;
+    text-decoration-thickness: 2px;
+    text-align: center;
+    margin: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.artistSlides {display: none}
+
+/* Slideshow container */
+.artistslideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: block;
+  width: 80%;
+  margin-top: 5px;
+}
+
+.artistslideshowImages{
+    height: 40vh;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Next & previous buttons */
+.artistprev, .artistnext {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #FAF6F2;
+  font-weight: normal;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.artistnext {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.artistprev:hover, .artistnext:hover {
+  background-color: #DED1BD;
+}
+
+/* Caption text */
+.artisttext {
+  color: #683B2B;
+    font-family: 'Monda';
+  font-size: 10px;
+  padding: 0px 0px;
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  text-align: right;
+}
+
+/* The dots/bullets/indicators */
+.artistdot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #DED1BD;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .artistdot:hover {
+  background-color: #B08401;
+}
+
+.Artistcolumn h3{
+    padding-top: 20px;
+}
+
+/*Other Artists*/
+.otherArtists{
+    background-color: #D49E8B;
+    padding: 5vh;    
+}  
+
+.otherArtistsAcc
+{
+    background-color: #D49E8B;
+    color: #FAF6F2;
+    font-family: 'Julius Sans One', sans-serif;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 5vh;
+    font-weight: normal;
+    transition: 0.4s;
+}
+
+.active3, .otherArtistsAcc:hover {
+    border-bottom:1px solid #FAF6F2;
+    border-top:1px solid #FAF6F2;
+    padding:2vh;
+}
+
+.otherArtistsPanel{
+    background-color: inherit;
+    padding: 0 0px;
+    max-height: 0;
+    height: auto;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+#otherArtistsBox{
+    border: 1px solid #FAF6F2;
+    max-width: 100%;
+}
+
+.OAImg{
+    width: 90%;
+    object-fit: contain;
+    margin: auto;
+    position: relative;
+    margin-left: auto;
+}
+
+.OAImg img{
+    max-width: 100%;  
+}
+
+.OAtext{
+    color: #FAF6F2;
+}
+
+
+/*Shop*/
+.shop {
+    border: 1px solid #FAF6F2;
+    background-color: #FAF6F2;
+/*    padding: 2vh 80vh;*/
+}
+
+
+.smallunderline::after {
+    content: '';
+    position: absolute;
+    left: 37%;
+    display: inline-block;
+    height: 1.5em;
+    width: 25%;
+    border-bottom: 1px solid;
+    border-color: #683B2B;
+    margin-top: 5px;
+}
+
+.moreColumn{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 20px;
+    height: auto;
+    margin: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px;
+    background-color: #FAF6F2;
+}
+
+.morebox{
+    height: 50vh;
+    border: 1px solid #683B2B;
+    position: relative;
+     display: flex;
+    justify-content: center;
+    transition: transform .2s;
+}
+
+.morebox:hover {
+  transform: scale(1.1);
+}
+
+.morebox a {
+    color: #683B2B;
+    font-family: 'Monda';
+    font-size: 5vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-decoration: none;
+    
+}
+
+.more{
+    background-color: #FAF6F2;
+}
+
+footer{
+    object-fit: scale-down;
+    display: block;
+    border-top: 1px solid #683B2B;
+}
+
+footer .column{
+    float: left;
+    width: 33%;  
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+}
+
+footer .column .column2{
+    height: 10vh;
+    width: 25%;
+    float: left;
+}
+
+footer p{
+    margin-top: 1vh;
+    font-size: 2vh;
+    float: right;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+
+
+
+
+
+

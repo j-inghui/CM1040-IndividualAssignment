@@ -1,0 +1,420 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: #FAF6F2 ;
+    color: #683B2B;
+    justify-content: center;
+    align-content: center;
+    margin:0
+}
+
+p{
+    font-weight: normal;
+    font-family: 'Monda';
+    font-size: 3vh;
+    color: #683B2B;
+    
+}
+
+
+h1{
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: normal;
+    font-size: 4vh;
+    color: #683B2B;
+    margin: 5vh;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: normal;
+    font-size: 5vh;
+    color: #683B2B;
+    margin: 5vh;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Monda';
+    font-weight: normal;
+    font-size: 5vh;
+    color: #683B2B;
+    text-align: left;
+}
+
+h5{
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: normal;
+    font-size: 5vh;
+    color: #683B2B;
+    margin: 1vh;
+    text-align: center;
+}
+  
+a{
+    color: #B08401;
+}
+
+/*Nav bar*/
+.navbar {
+    overflow: hidden;
+    padding: 5px;
+    height: auto;
+    width: auto;
+}
+  
+.navbar a {
+    display: inline-flex;
+    flex-direction: row;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding:10px;
+    font-size: 20px;
+    line-height: 6vh;
+    color: #683B2B;
+  }
+
+/*Logo*/
+.Logo{
+    height: 45px;
+    width: auto;
+    padding:6px;
+    margin-right:1vw;
+}  
+
+/*About Button*/
+.dropdown {
+    float: left;
+    font-size: 20px;
+    line-height: 6vh;
+    color: #683B2B;
+  }
+  
+.dropdown #dropbtn {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    padding: 2vh;
+    background-color: inherit;
+    font-family: inherit;
+    margin-top:10px;
+    color: #683B2B;
+    cursor: pointer;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top:10vh;
+    background-color: #fffdfb;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding:3px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 16px;
+    line-height: 6vh;
+    text-decoration: none;
+    color: #683B2B;
+  }
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #b08401;
+    transition-duration: 0.3s;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.navActive{
+    margin-top: 7px;
+}
+
+.navActive:hover{
+    color: #b08401;
+    transition-duration: 0.3s;
+    transform: translateY(-10px);
+    height: auto;
+}
+
+
+/*Subscribe form button*/
+.topnav-right{
+    position: absolute;
+    right: 0;
+    padding:10px;
+}
+
+.container {
+  padding: 16px;
+  position: relative;
+}
+
+.row{
+    width: auto;
+    height: auto;
+    margin: none;
+    padding: none;
+    column-gap: 20%;
+}
+
+.column{
+    width: 45%;
+    float: left;
+    margin-right: auto;
+}
+
+/*Image*/
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.subscribeBackground{
+
+    height: 70vh;
+}
+
+/* Full-width input fields */
+input[type=email] {
+    width: 70%;
+    padding: 12px 20px;
+    margin : 0 auto;
+    display: block;
+    border: 1px solid #FAF6F2;
+    box-sizing: border-box;
+    background-color: #e7c9bf;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+/* Set a style for all buttons */
+.subscribeBtn {
+  background-color: #B08401;
+  color: #FAF6F2;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Julius Sans One', sans-serif;  
+}
+
+.subscribeBtn:hover {
+  opacity: 0.8;
+}
+
+#submit{
+    width:40%;
+    margin-top: 20px;
+    font-size: 2.5vh;
+}
+
+#subRight{
+    text-align: center;
+}
+
+.subscribeHeader{
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+}
+.subscribeHeader::after {
+    content: '';
+    position: absolute;
+    left: 10%;
+    display: inline-block;
+    height: 1em;
+    width: 80%;
+    border-bottom: 1px solid;
+    border-color: #683B2B;
+    margin-top: 10px;
+}
+
+.subscribePara {
+    font-size: 4vh;
+    margin-top: 50px;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /*  Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #FAF6F280; /* color w/ opacity */
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #e7c9bf;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 75%;
+    border-style: solid;
+  border-width: 0.5px; 
+  border-color: #683B2B;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #683B2B;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #B08401;
+  cursor: pointer;
+}
+
+/*marquee*/
+marquee{
+    height: 30px;
+    background-color: #D49E8B;
+    padding:2vh;
+    letter-spacing: 0.05vw;
+}
+
+marquee h4{
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 19px;
+    color: #FAF6F2;
+    vertical-align: baseline;
+    padding-top: 0.5vh;
+    font-weight: normal;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.FreePatterns{
+    background-color: #DED1BD;
+    margin-top: -5px;
+}
+
+.FreePatternsHeader{
+    padding: 5vh 40%;
+}
+.smallunderline{
+    margin: 0 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #683B2B;
+    border-top: 1px solid #683B2B;
+    font-size: 4vh;
+}
+
+.FreePatternsItem{
+    margin: 10vh;
+}
+
+.FProw{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+/*    border: 1px solid black;*/
+    padding: 3vh 3vh 6vh 3vh;
+}
+
+.FPcolumn{
+    height: auto;
+}
+
+.imgbox{
+    text-align: center;
+    height: 50vh;
+}
+
+#FPcolumn1{
+  width: 40%;
+}
+
+#FPcolumn2{
+  width: 60%;
+}
+
+#FPcolumn2 h1{
+    text-align: left;
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+#FPcolumn2 p{
+    text-align: left;
+    margin: 0;
+    text-align: justify;
+    font-size: 2vh;
+}
+
+.box{
+    height: 50vh;
+    width: 50vh;
+    position: relative;
+     display: flex;
+    border: 1px solid #683B2B;
+}
+
+footer{
+    object-fit: scale-down;
+    display: block;
+    border-top: 1px solid #683B2B;
+}
+
+footer .column{
+    float: left;
+    width: 33%;  
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+}
+
+footer .column .column2{
+    height: 10vh;
+    width: 25%;
+    float: left;
+}
+
+footer p{
+    margin-top: 1vh;
+    font-size: 2vh;
+    float: right;
+}
+
+
+
+
+
+
+

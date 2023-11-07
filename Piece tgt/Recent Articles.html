@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Recent Articles </title>
+        <link rel="shortcut icon" href="Image/Web%20logo.ico"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Crochet">
+        <meta name="refresh" content=600>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href='https://fonts.googleapis.com/css?family=Monda' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+        
+        <link rel="Stylesheet" type="text/css" href="Stylesheet/Recent%20Articles.css">
+        <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <nav>
+            <div class="navbar">
+                <a href="index.html"><img src="Image/Logo_Dark_Brown.png" onmouseover="this.src='Image/Logo_After.png'" onmouseout="this.src='Image/Logo_Dark_Brown.png'" alt="Crochet Logo" img class ="Logo"></a>
+                <a class="navActive" href="Free%20Patterns.html">Free Patterns</a>
+                <a class="navActive" href="Materials.html">Materials</a>
+                <a class="navActive" href="Ideas.html">Ideas</a>
+                
+                <div class="dropdown">
+                    <button id="dropbtn" class="navActive">About </button>
+                    <div class="dropdown-content">
+                        <a class="submenuItem" href = "About%20Us.html">About Us</a>
+                        <a class="submenuItem" href = "FAQ.html">FAQ</a>
+                    </div>
+                </div>
+                
+                <div class="topnav-right">
+                    <button class="subscribeBtn" onclick="document.getElementById('subscribe').style.display='block'" style="width:auto;">Subscribe</button>
+
+                    <div id="subscribe" class="modal">
+
+                      <form class="modal-content animate" action="/action_page.php" method="post">
+
+                        <div class="container">
+                            <span onclick="document.getElementById('subscribe').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <div class="row">
+
+                                <div class="column">
+                                    <img src="Image/Login%20Background%20crop.jpg" alt="Subscription Photo" class="subscribeBackground">
+                                </div>
+                                <div class="column" id="subRight">
+
+                                    <h1 class="subscribeHeader">Join us now!</h1>
+                                    <p class="subscribePara">Subscribe to stay hook to our latest crochet news!</p>
+                                  <br>
+                                  <input type="email" placeholder="Email Address" name="email" required>
+                                  <button type="submit" class="subscribeBtn" id ="submit">Subscribe</button>
+                                </div>
+
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </nav> 
+        <marquee>
+            <h4>User has subscribe to Chubbscrochet!</h4>
+        </marquee>
+        <div class="RecentArticles">
+            <div class="RecentArticlesHeader">
+                <h1 class="smallunderline"> Recent Articles </h1>
+            </div>
+        </div>
+        <div class="recentArticleItems">
+                <div class="recentArticleBox">
+                    <img src="Image/Article%201.jpg" alt="Unlikely Dwellers of the Urban">
+                </div>
+                <div class="recentArticleBox">
+                    <h1>Unlikely Dwellers of the Urban</h1>
+                    <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et est vestibulum, condimentum justo nec, viverra lectus. Nulla et tristique lectus. Quisque in orci sed sem interdum luctus. Sed varius nec ex nec condimentum. Duis sed efficitur urna. Proin eget libero vitae purus lacinia fringilla. Integer id quam ac ipsum consectetur interdum in quis eros. Vivamus vehicula tristique gravida. Vestibulum ut lorem accumsan nisl dapibus pharetra eu nec quam. Integer non erat justo. Quisque sit amet congue velit. Integer sagittis, purus at cursus maximus, turpis purus scelerisque felis, at vehicula nibh felis vel leo. Ut nec tortor non orci feugiat dapibus sit amet eget nunc. Donec ac tortor metus. Suspendisse nisl neque, sodales at urna vitae, consequat pulvinar enim. Mauris scelerisque mi sed arcu tempus, id posuere nunc auctor. Nam aliquam sagittis lectus, nec mollis justo fringilla eget. Aenean leo turpis, accumsan non massa et, lacinia lobortis nibh. Donec rutrum luctus elit.<p>
+                    <a href="http://www.kllylmrck.com/gallery#/unlikely-dwellers-of-the-urban/" target="_blank" class="RAlink">See original</a>
+                </div>
+            </div>
+        <div class="recentArticleItems">
+                <div class="recentArticleBox">
+                    <img src="Image/Article%202.jpg" alt="Keeping Up Appearances">
+                </div>
+                <div class="recentArticleBox">
+                    <h1>Unlikely Dwellers of the Urban</h1>
+                    <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et est vestibulum, condimentum justo nec, viverra lectus. Nulla et tristique lectus. Quisque in orci sed sem interdum luctus. Sed varius nec ex nec condimentum. Duis sed efficitur urna. Proin eget libero vitae purus lacinia fringilla. Integer id quam ac ipsum consectetur interdum in quis eros. Vivamus vehicula tristique gravida. Vestibulum ut lorem accumsan nisl dapibus pharetra eu nec quam. Integer non erat justo. Quisque sit amet congue velit. Integer sagittis, purus at cursus maximus, turpis purus scelerisque felis, at vehicula nibh felis vel leo. Ut nec tortor non orci feugiat dapibus sit amet eget nunc. Donec ac tortor metus. Suspendisse nisl neque, sodales at urna vitae, consequat pulvinar enim. Mauris scelerisque mi sed arcu tempus, id posuere nunc auctor. Nam aliquam sagittis lectus, nec mollis justo fringilla eget. Aenean leo turpis, accumsan non massa et, lacinia lobortis nibh. Donec rutrum luctus elit.<p>
+                    <a href="https://www.ashleyvblalock.com/installation/keeping-up-appearances/1" target="_blank" class="RAlink">See original</a>
+                </div>
+            </div>
+        <div class="recentArticleItems">
+                <div class="recentArticleBox">
+                    <img src="Image/Article%203.jpg" alt="Crochet Coral Reef">
+                </div>
+                <div class="recentArticleBox">
+                    <h1>Keeping Up Appearances</h1>
+                    <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et est vestibulum, condimentum justo nec, viverra lectus. Nulla et tristique lectus. Quisque in orci sed sem interdum luctus. Sed varius nec ex nec condimentum. Duis sed efficitur urna. Proin eget libero vitae purus lacinia fringilla. Integer id quam ac ipsum consectetur interdum in quis eros. Vivamus vehicula tristique gravida. Vestibulum ut lorem accumsan nisl dapibus pharetra eu nec quam. Integer non erat justo. Quisque sit amet congue velit. Integer sagittis, purus at cursus maximus, turpis purus scelerisque felis, at vehicula nibh felis vel leo. Ut nec tortor non orci feugiat dapibus sit amet eget nunc. Donec ac tortor metus. Suspendisse nisl neque, sodales at urna vitae, consequat pulvinar enim. Mauris scelerisque mi sed arcu tempus, id posuere nunc auctor. Nam aliquam sagittis lectus, nec mollis justo fringilla eget. Aenean leo turpis, accumsan non massa et, lacinia lobortis nibh. Donec rutrum luctus elit.<p>
+                    <a href="https://crochetcoralreef.org/" target="_blank" class="RAlink">See original</a>
+                </div>
+            </div>
+        <footer>
+            <div class="column">
+                <h1>                                                                                   </h1>
+            </div>
+            <div class="column">
+                <div class="column2">
+                    <a href="https://www.instagram.com/chubbscrochet/" target="_blank"><img src="Image/Insta%20Icon.png" alt="Instagram" img class ="Footer Icon"></a>
+                </div>
+                <div class="column2">
+                    <a href="https://www.facebook.com/chubbscrochet-112330340943391/" target="_blank"><img src="Image/Facebook%20Icon.png" alt="Facebook" img class ="Footer Icon"></a>
+                </div>
+                <div class="column2">
+                    <a href="https://www.youtube.com/channel/UCy0qzvFnPBdHPq7B1jnsZ9w/featured" target="_blank"><img src="Image/Youtube%20Icon.png" alt="Youtube" img class ="Footer Icon"></a>
+                </div>
+                <div class="column2">
+                    <a href="https://www.pinterest.com/chubbscrochet/_saved/" target="_blank"><img src="Image/Pinterest%20Icon.png" alt="Instagram" img class ="Footer Icon"></a>
+                </div>
+            </div>
+            <div class="column">
+                <p>This is a Singapore Institute of Management project</p>
+            </div>
+        
+        </footer>
+       
+        <script src="Recent%20Articles.js"></script>
+    </body>
+</html>

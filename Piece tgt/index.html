@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Crochet Homepage </title>
+        <link rel="shortcut icon" href="Image/Web%20logo.ico"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Crochet">
+        <meta name="refresh" content=600>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href='https://fonts.googleapis.com/css?family=Monda' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+        
+        <link rel="Stylesheet" type="text/css" href="Stylesheet/Index.css">
+        <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <nav>
+            <div class="navbar">
+                <a href="index.html"><img src="Image/Logo_Dark_Brown.png" onmouseover="this.src='Image/Logo_After.png'" onmouseout="this.src='Image/Logo_Dark_Brown.png'" alt="Crochet Logo" img class ="Logo"></a>
+                <a class="navActive" href="Free%20Patterns.html">Free Patterns</a>
+                <a class="navActive" href="Materials.html">Materials</a>
+                <a class="navActive" href="Ideas.html">Ideas</a>
+                
+                <div class="dropdown">
+                    <button id="dropbtn" class="navActive">About </button>
+                    <div class="dropdown-content">
+                        <a class="submenuItem" href = "About%20Us.html">About Us</a>
+                        <a class="submenuItem" href = "FAQ.html">FAQ</a>
+                    </div>
+                </div>
+                
+                <div class="topnav-right">
+                    <button class="subscribeBtn" onclick="document.getElementById('subscribe').style.display='block'" style="width:auto;">Subscribe</button>
+
+                    <div id="subscribe" class="modal">
+
+                      <form class="modal-content animate" action="/action_page.php" method="post">
+
+                        <div class="container">
+                            <span onclick="document.getElementById('subscribe').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <div class="row">
+
+                                <div class="column">
+                                    <img src="Image/Login%20Background%20crop.jpg" alt="Subscription Photo" class="subscribeBackground">
+                                </div>
+                                <div class="column" id="subRight">
+
+                                    <h1 class="subscribeHeader">Join us now!</h1>
+                                    <p class="subscribePara">Subscribe to stay hook to our latest crochet news!</p>
+                                  <br>
+                                  <input type="email" placeholder="Email Address" name="email" required>
+                                  <button type="submit" class="subscribeBtn" id ="submit">Subscribe</button>
+                                </div>
+
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </nav> 
+        <marquee>
+            <h4>User has subscribe to Chubbscrochet!</h4>
+        </marquee>
+        <div class="mainArticle">
+                <h1> Crochet art installation at national gallery </h1>
+                <div class="mainArticleItems">
+                    <div class="mainArticleBox">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <!--1/3-->
+                                <img src="Image/Kelly%20Limerick%20Artwork%201.PNG" class="slideshowImages">
+                                <div class="slideshowText">Source: @kllylmrck (2016 Instagram)</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <!--2/3-->
+                                <img src="Image/Kelly%20Limerick%20Artwork%202.PNG" class="slideshowImages">
+                                <div class="slideshowText">Source: @kllylmrck (2016 Instagram)</div>
+                            </div>
+
+                            <div class="mySlides fade">
+                                <!-- 3/3-->
+                              <img src="Image/Kelly%20Limerick%20Artwork%203.PNG" class="slideshowImages">
+                              <div class="slideshowText">Source: @ourfaveplacesg (2016 Instagram)</div>
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        </div>
+                        <br>
+
+                        <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span> 
+                          <span class="dot" onclick="currentSlide(2)"></span> 
+                          <span class="dot" onclick="currentSlide(3)"></span> 
+                        </div>
+                    </div>
+                    <div class="mainArticleBox">
+                        <p style="text-align: justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et est vestibulum, condimentum justo nec, viverra lectus. Nulla et tristique lectus. Quisque in orci sed sem interdum luctus. Sed varius nec ex nec condimentum. Duis sed efficitur urna. Proin eget libero vitae purus lacinia fringilla. Integer id quam ac ipsum consectetur interdum in quis eros. Vivamus vehicula tristique gravida. Vestibulum ut lorem accumsan nisl dapibus pharetra eu nec quam. Integer non erat justo. Quisque sit amet congue velit. Integer sagittis, purus at cursus maximus, turpis purus scelerisque felis, at vehicula nibh felis vel leo. Ut nec tortor non orci feugiat dapibus sit amet eget nunc. Donec ac tortor metus. Suspendisse nisl neque, sodales at urna vitae, consequat pulvinar enim. Mauris scelerisque mi sed arcu tempus, id posuere nunc auctor. Nam aliquam sagittis lectus, nec mollis justo fringilla eget. Aenean leo turpis, accumsan non massa et, lacinia lobortis nibh. Donec rutrum luctus elit.<p>
+                    </div>
+                </div>
+            </div>
+            <div class="recentArticles">
+                <button class="recentArticlesAcc" onclick="showRecentArticles()">Recent Articles</button>
+                <div class="recentArticlesPanel">
+                    <div class="accColumn">
+                        <div class="box" id="recentArticlesBox">
+                            <div class="accImgBox" id="recentArticlesImgBox">
+                                <a href="Recent%20Articles.html"><img src="Image/Article%201.jpg" alt="Article 1 Photo"></a>
+                                <div class="RAoverlay">
+                                    <div class="RAtext">Unlikely Dwellers of the Urban</div>
+                                  </div>
+                            </div>
+
+                        </div>
+                        <div class="box" id="recentArticlesBox">
+                            <div class="accImgBox" id="recentArticlesImgBox">
+                                <a href="Recent%20Articles.html"><img src="Image/Article%202.jpg" alt="Article 2 Photo"></a>
+                                <div class="RAoverlay">
+                                    <div class="RAtext">Keeping Up Appearances</div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="box" id="recentArticlesBox">
+                            <div class="accImgBox" id="recentArticlesImgBox">
+                                <a href="Recent%20Articles.html"><img src="Image/Article%203.jpg" alt="Article 3 Photo"></a>
+                                <div class="RAoverlay">
+                                    <div class="RAtext">Crochet Coral Reef</div>
+                                  </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="artistOfTheWeek">
+                <div class="artistItems">
+                    <div class="Artistcolumn">
+                        <h2>Artist of the Week</h2>
+                    <div class="artistslideshow-container">
+
+                        <div class="artistSlides fade">
+                        <!--1/4-->
+                          <img src="Image/Artist%201.jpg" class="artistslideshowImages">
+                          <div class="artisttext">Source: https://bunnyandyarn.com/</div>
+                        </div>
+
+                        <div class="artistSlides fade">
+                        <!--2/4-->
+                          <img src="Image/Artist%202.jpg" class="artistslideshowImages">
+                          <div class="artisttext">Source: https://bunnyandyarn.com/</div>
+                        </div>
+
+                        <div class="artistSlides fade">
+                        <!-- 3/4-->
+                          <img src="Image/Artist%203.jpg" class="artistslideshowImages">
+                          <div class="artisttext">Source: https://bunnyandyarn.com/</div>
+                        </div>
+
+                        <div class="artistSlides fade">
+                        <!-- 3/4-->
+                          <img src="Image/Artist%204.jpg" class="artistslideshowImages">
+                          <div class="artisttext">Source: https://bunnyandyarn.com/</div>
+                        </div>
+
+                        <a class="artistprev" onclick="plusartistSlides(-1)">&#10094;</a>
+                        <a class="artistnext" onclick="plusartistSlides(1)">&#10095;</a>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="artistdot" onclick="artistcurrentSlide(1)"></span> 
+                        <span class="artistdot" onclick="artistcurrentSlide(2)"></span> 
+                        <span class="artistdot" onclick="artistcurrentSlide(3)"></span>
+                        <span class="artistdot" onclick="artistcurrentSlide(4)"></span> 
+                    </div>
+                </div>
+                <div class="Artistcolumn">
+                    <h3>BunnyAndYarn</h3>
+                    <p>Instagram: @bunnyandyarn</p>
+                    <p>Website: https://bunnyandyarn.com/</p>
+                    <br>
+                    <p><u>About artist:</u></p>
+                    <p>Artist started crochet in 2014 and started BunnyAndYarn in 2019.</p>
+                    <p>Main mascot: Memo.</p>
+                    <br>
+                    <p><u>What inspires you?</u></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et est vestibulum, condimentum justo nec, viverra lectus. Nulla et tristique lectus.</p>
+                </div>
+            </div>
+        </div>
+        <div class="otherArtists">
+                <button class="otherArtistsAcc" onclick="showOtherArtists()">Other Artists</button>
+                <div class="otherArtistsPanel">
+                    <div class="accColumn">
+                        <div class="box" id="otherArtistsBox">
+                            <div class="accImgBox" id="otherArtistsImgBox">
+                                <a href="Other%20Artists.html"><img src="Image/OtherArtist1.PNG" class="OAImg" alt="Other Artist 1 Photo"></a>
+                                <div class="OAoverlay">
+                                    <div class="OAtext">@nina.hookcreations</div>
+                                  </div>
+                            </div>
+
+                        </div>
+                        <div class="box" id="otherArtistsBox">
+                            <div class="accImgBox" id="otherArtistsImgBox">
+                                <a href="Other%20Artists.html"><img src="Image/OtherArtist2.PNG" class="OAImg" alt="Other Artist 2 Photo"></a>
+                                <div class="OAoverlay">
+                                    <div class="OAtext">@louchette.co</div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="box" id="otherArtistsBox">
+                            <div class="accImgBox" id="otherArtistsImgBox">
+                                <a href="Other%20Artists.html"><img src="Image/OtherArtist3.PNG" class="OAImg" alt="Other Artist 3 Photo"></a>
+                                <div class="OAoverlay">
+                                    <div class="OAtext">@crochet_calistta</div>
+                                  </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+            </div>
+        <div class="more">
+            <div class="shop">
+                <h1 class="smallunderline">Find out more about crochet</h1>
+                <br>
+                <div class="moreColumn">
+                    <div class="morebox"><a href="Free%20Patterns.html">Free Patterns</a></div>
+                    <div class="morebox"><a href="Materials.html">Materials</a></div>
+                    <div class="morebox"><a href="Ideas.html">Ideas</a></div>                        
+                </div>
+            </div>    
+        </div>
+        <footer>
+            <div class="column">
+                <h1>                                                                                   </h1>
+            </div>
+            <div class="column">
+                <div class="column2">
+                    <a href="https://www.instagram.com/chubbscrochet/" target="_blank"><img src="Image/Insta%20Icon.png" alt="Instagram" img class ="Footer Icon"></a>
+                </div>
+                <div class="column2">
+                    <a href="https://www.facebook.com/chubbscrochet-112330340943391/" target="_blank"><img src="Image/Facebook%20Icon.png" alt="Facebook" img class ="Footer Icon"></a>
+                </div>
+                <div class="column2">
+                    <a href="https://www.youtube.com/channel/UCy0qzvFnPBdHPq7B1jnsZ9w/featured" target="_blank"><img src="Image/Youtube%20Icon.png" alt="Youtube" img class ="Footer Icon"></a>
+                </div>
+                <div class="column2">
+                    <a href="https://www.pinterest.com/chubbscrochet/_saved/" target="_blank"><img src="Image/Pinterest%20Icon.png" alt="Instagram" img class ="Footer Icon"></a>
+                </div>
+            </div>
+            <div class="column">
+                <p>This is a Singapore Institute of Management project</p>
+            </div>
+        
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
